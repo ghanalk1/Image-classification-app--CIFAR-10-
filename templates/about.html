@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="card text-center container">
+        <div class="card-body">
+            <h5 class="card-title">This image classifier is trained on CIFAR-10 dataset</h5>
+            <p class="card-text">
+                Images are classified into these 10 classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+            </p>
+            <p>
+                For training, 3 VGG convolution blocks were used for 100 epochs, getting accuracy of 85.81% on test data
+            </p>
+        </div>
+    </div>
+{% endblock %}

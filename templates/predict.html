@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}predict{% endblock %}
+
+{% block content %}
+    <div class="card text-center container">
+        <div class="card-body">
+            <h5 class="card-title">Uploaded Image was</h5>
+            <p class="card-text">{{ predict_class }}</p>
+            <form action="/">
+                <input type="submit" value="Home" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+{% endblock %}
